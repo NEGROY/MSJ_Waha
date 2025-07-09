@@ -1,0 +1,25 @@
+<!-- app/views/mensajes/crear.php -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Enviar Mensaje</title>
+  <link rel="stylesheet" href="/miProyecto/public/css/estilos.css"> <!-- Opcional -->
+  <style>
+    body { font-family: Arial; margin: 20px; background: #f4f4f4; }
+    form { background: white; padding: 20px; border-radius: 10px; max-width: 500px; margin: auto; }
+    label { display: block; margin-top: 10px; font-weight: bold; }
+    input, textarea { width: 100%; padding: 8px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc; }
+    button { margin-top: 15px; padding: 10px 20px; background: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #0056b3; }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">Formulario de Mensajes</h2>
+
+  <form method="POST" action="/mensajes/guardar">
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" required>
+
+    <label for="t
